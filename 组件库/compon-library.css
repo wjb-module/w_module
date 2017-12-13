@@ -377,6 +377,7 @@ input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
 .w-input-box .w-icon i{
     position: absolute;
     background: url(./images/wjb-img.png);
+    cursor: pointer;
 }
 .w-input-box .w-icon-search i{
     left: 10px;
@@ -400,5 +401,42 @@ input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .w-input-box .w-icon-close-after i{
     right: 6px;
+}
+.w-input-box .w-input-icon-before.w-input-xlarge{
+    padding: 8px 30px 8px 30px;
+}
+.w-input-box .w-input-icon-before.w-input-large{
+    padding: 6px 30px 6px 30px;
+}
+.w-input-box .w-input-icon-before.w-input-normal{
+    padding: 4px 30px 4px 30px;
+}
+.w-input-box .w-input-icon-before.w-input-small{
+    padding: 3px 30px 3px 30px;
+}
+
+.w-input-box .w-input-icon-after.w-input-xlarge{
+    padding: 8px 30px 8px 10px;
+}
+.w-input-box .w-input-icon-after.w-input-large{
+    padding: 6px 30px 6px 10px;
+}
+.w-input-box .w-input-icon-after.w-input-normal{
+    padding: 4px 30px 4px 10px;
+}
+.w-input-box .w-input-icon-after.w-input-small{
+    padding: 3px 30px 3px 10px;
+}
+.w-input-normal +.w-icon-search i,
+.w-input-small +.w-icon-search i{
+    width: 14px;
+    height: 14px;
+    background-position: -112px -10px;
+}
+.w-input-normal +.w-icon-search +.w-icon-close i,
+.w-input-small +.w-icon-search +.w-icon-close i{
+    width: 10px;
+    height: 10px;
+    background-position: -36px -153px;
 }
 /*输入框样式组 end*/
