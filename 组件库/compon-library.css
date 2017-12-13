@@ -4,10 +4,14 @@
 
 /*元素默认样式删除 start*/
 body {
-    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, STHeitiSC-Light, WOL_SB, 'Segoe UI Semibold', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    font-family:'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,WOL_SB,'Segoe UI Semibold','Segoe UI',Tahoma,Helvetica,sans-serif;
     margin: 0;
+    font-weight: 200;
 }
-
+input,button{
+    font-family:'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,WOL_SB,'Segoe UI Semibold','Segoe UI',Tahoma,Helvetica,sans-serif;
+    font-weight: 200;
+}
 button {
     padding: 0;
     margin: 0;
@@ -246,7 +250,6 @@ button:hover {
     opacity: .4;
     cursor: not-allowed;
 }
-.w-input-box.disInput .limit-num-box
 
 .w-input-box.disInput:hover{
     border:1px solid #e1e1e1;
@@ -255,10 +258,12 @@ button:hover {
 .lib-btn-group .w-input-box .w-input{
     margin: 0;
 }
-.w-input-box .w-input-limit:hover{
+.w-input-box .w-input-limit:hover,
+.w-input-box .w-input-icon:hover{
     border:0;
 }
-.w-input-box .w-input-limit:focus{
+.w-input-box .w-input-limit:focus,
+.w-input-box .w-input-icon:focus{
     border:0;
 }
 .limit-num-box{
@@ -331,5 +336,69 @@ input.w-input-normal::-moz-placeholder { /* Mozilla Firefox 19+ */
 input.w-input-small:-ms-input-placeholder,
 input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
     font-size:12px;
+}
+
+/*带有icon的输入框*/
+.w-input-icon{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+}
+.w-input-icon-before{
+    padding: 8px 30px 8px 30px;
+}
+.w-input-icon-after{
+    padding: 8px 60px 8px 10px;
+}
+/*此处w-icon 对父类w-input-box依赖性*/
+.w-input-box .w-icon{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+}
+.w-icon-search{
+    left: 0;
+    width: 26px;
+    height: 16px;
+}
+.w-icon-close{
+    right: 0;
+    width: 22px;
+    height: 12px;
+}
+.w-icon-search-after{
+    left: auto;
+    right: 0;
+}
+.w-icon-close-after{
+    right: 30px;
+}
+.w-input-box .w-icon i{
+    position: absolute;
+    background: url(./images/wjb-img.png);
+}
+.w-input-box .w-icon-search i{
+    left: 10px;
+    top:50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    background-position: -69px -61px;
+}
+.w-input-box .w-icon-close i{
+    right: 10px;
+    top:50%;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background-position: -41px -11px;
+}
+.w-input-box .w-icon-search-after i{
+    left: auto;
+    right: 10px;
+}
+.w-input-box .w-icon-close-after i{
+    right: 6px;
 }
 /*输入框样式组 end*/
