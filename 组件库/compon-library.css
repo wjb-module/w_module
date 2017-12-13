@@ -147,3 +147,117 @@ button:hover {
 
 /*按钮样式组 end*/
 
+/*输入框样式组 start*/
+.w-input{
+    display: inline-block;
+    padding: 8px 10px 8px 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width:180px;
+    border:1px solid #e1e1e1;
+    border-radius:2px;
+    background:#fff;
+    color: #444;
+}
+.w-input-active{
+    border:1px solid #45c0ff;
+    box-shadow:0 0 6px 0 #edf9ff;
+}
+.w-input-error{
+    border:1px solid #fa5555;
+}
+.w-input:hover,
+.w-input-box:hover
+{
+    border:1px solid #45c0ff;
+    box-shadow:0 0 6px 0 #edf9ff;
+}
+.w-input[disabled]{
+    opacity: .4;
+    cursor: not-allowed;
+}
+.w-input[disabled]:hover{
+    border:1px solid #e1e1e1;
+    box-shadow: none;
+}
+.w-input:focus,
+.w-input-box:focus
+{
+    outline:none;
+    border:1px solid #45c0ff;
+    box-shadow:0 0 6px 0 #edf9ff;
+}
+/*input*/
+.w-input-box{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    box-sizing: border-box;
+    width:180px;
+    border:1px solid #e1e1e1;
+    border-radius:2px;
+    background:#fff;
+    color: #444;
+}
+.w-input-box.disInput .w-input-limit{
+    opacity: .4;
+    cursor: not-allowed;
+}
+.w-input-box.disInput:hover{
+    border:1px solid #e1e1e1;
+    box-shadow: none;
+}
+.lib-btn-group .w-input-box .w-input{
+    margin: 0;
+}
+.w-input-limit{
+    padding: 8px 10px 8px 15px;
+    width: 146px;
+    box-sizing: border-box;
+    border: 0;
+}
+.w-input-box .w-input-limit:hover{
+    border:0;
+}
+.w-input-box .w-input-limit:focus{
+    border:0;
+}
+.limit-num-box{
+    position: absolute;
+    top:0;
+    right: 10px;
+    display: inline-flex;
+    height: 36px;
+    line-height: 36px;
+    color: #999;
+    font-size: 12px;
+}
+/*超出限制*/
+.limit-num{
+    color:#fa5555;
+}
+input.w-input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size:14px;
+    color:#a9aaaa;
+    letter-spacing:0;
+    text-align:left;
+}
+input.w-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size:14px;
+    color:#a9aaaa;
+    letter-spacing:0;
+    text-align:left;
+}
+input.w-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size:14px;
+    color:#a9aaaa;
+    letter-spacing:0;
+    text-align:left;
+}
+input.w-input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size:14px;
+    color:#a9aaaa;
+    letter-spacing:0;
+    text-align:left;
+}
+/*输入框样式组 end*/

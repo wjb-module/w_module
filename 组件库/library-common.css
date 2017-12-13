@@ -208,12 +208,9 @@ div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
     padding: 5px 0;
 }
 
-.lib-btn-group {
-    display: -webkit-flex;
-    display: flex;
-    padding: 5px 5px;
-}
-
-.lib-btn-addmar {
-    margin: 0 10px;
+.lib-btn-group .w-btn,
+.lib-btn-group .w-input,
+.lib-btn-group .w-input-box
+{
+    margin: 5px 10px;
 }
