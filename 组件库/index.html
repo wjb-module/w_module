@@ -166,47 +166,132 @@
                             <h4>2.例子</h4>
                             <pre>&lt;button class="w-btn w-btn-main w-btn-write" disabled &gt;文字按钮&lt;/button&gt;//带有禁用的文字按钮</pre>
                             <h4>3.文档</h4>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn</span> :
+                            <p class="lib-info-say"><span class="name">w-btn</span> :
                                 按钮组件的默认类名，使用按钮必须先加上该类名。class="w-btn"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-main，w-btn-success，w-btn-warn，w-btn-danger</span>:
+                            <p class="lib-info-say"><span class="name">w-btn-main，w-btn-success，w-btn-warn，w-btn-danger</span>:
                                 按钮组件基本类：主要按钮，成功按钮，警告按钮，危险按钮。class="w-btn w-btn-main"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-dec</span>:
+                            <p class="lib-info-say"><span class="name">w-btn-dec</span>:
                                 次要按钮类，四个不同类别的g按钮，加上该类，会变成次要按钮。class="w-btn w-btn-main w-btn-dec"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-write</span>:
+                            <p class="lib-info-say"><span class="name">w-btn-write</span>:
                                 文字按钮类，四个不同类别的按钮，加上该类，会变成文字按钮。class="w-btn w-btn-main w-btn-write"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-sea</span>:
+                            <p class="lib-info-say"><span class="name">w-sea</span>:
                                 搜索图标按钮类，四个不同类别的按钮，加上该类，会给图标加上搜索按钮。class="w-btn w-btn-main w-sea"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">[disabled]</span>:
+                            <p class="lib-info-say"><span class="name">[disabled]</span>:
                                 按钮的禁用属性。所有的按钮，加上该属性会进入禁用状态。 disabled="disabled"</p>
                         </div>
                     </div>
                 </div>
+                <!--基本输入框-->
                 <div class="lib-compnent-main clearfix" >
                     <div class="lib-compnent-group">
-                        <p>基本输入框</p>
+                        <p>超大号</p>
                         <div class="lib-compnent-show">
                             <div class="lib-btn-group">
-                                <input type="text" class="w-input" placeholder="输入内容">
-                                <input type="text" class="w-input w-input-active" placeholder="活动状态">
-                                <input type="text" class="w-input w-input-error" placeholder="输入错误">
-                                <input type="text" class="w-input" placeholder="禁用" disabled>
+                                <input type="text" class="w-input w-input-xlarge" placeholder="输入内容">
+                                <input type="text" class="w-input w-input-xlarge w-input-active" placeholder="活动状态">
+                                <input type="text" class="w-input w-input-xlarge w-input-error" placeholder="输入错误">
+                                <input type="text" class="w-input w-input-xlarge" placeholder="禁用" disabled>
                                 <div class="w-input-box">
-                                    <input type="text" class="w-input w-input-limit" data-length="8" placeholder="输入限制">
-                                    <div class="limit-num-box">
+                                    <input type="text" class="w-input w-input-limit w-input-xlarge"  placeholder="输入限制">
+                                    <div class="limit-num-box limit-num-box-xfat">
                                         <span>5</span>
                                         <span>/</span>
                                         <span>8</span>
                                     </div>
                                 </div>
                                 <div class="w-input-box disInput">
-                                    <input type="text" class="w-input w-input-limit" data-length="8" placeholder="超出限制">
-                                    <div class="limit-num-box">
+                                    <input type="text" class="w-input w-input-limit w-input-xlarge"  placeholder="超出限制" disabled>
+                                    <div class="limit-num-box limit-num-box-xfat">
                                         <span class="limit-num">15</span>
                                         <span class="limit-num">/</span>
                                         <span class="limit-num">18</span>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <p>大号</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <div class="lib-btn-group">
+                                    <input type="text" class="w-input w-input-large" placeholder="输入内容">
+                                    <input type="text" class="w-input w-input-large w-input-active" placeholder="活动状态">
+                                    <input type="text" class="w-input w-input-large w-input-error" placeholder="输入错误">
+                                    <input type="text" class="w-input w-input-large" placeholder="禁用" disabled>
+                                    <div class="w-input-box">
+                                        <input type="text" class="w-input w-input-limit w-input-large"  placeholder="输入限制">
+                                        <div class="limit-num-box limit-num-box-fat">
+                                            <span>5</span>
+                                            <span>/</span>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-input-box disInput">
+                                        <input type="text" class="w-input w-input-limit w-input-large"  placeholder="超出限制" disabled>
+                                        <div class="limit-num-box limit-num-box-fat">
+                                            <span class="limit-num">15</span>
+                                            <span class="limit-num">/</span>
+                                            <span class="limit-num">18</span>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <p>正常尺码</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <div class="lib-btn-group">
+                                    <input type="text" class="w-input w-input-normal" placeholder="输入内容">
+                                    <input type="text" class="w-input w-input-normal w-input-active" placeholder="活动状态">
+                                    <input type="text" class="w-input w-input-normal w-input-error" placeholder="输入错误">
+                                    <input type="text" class="w-input w-input-normal" placeholder="禁用" disabled>
+                                    <div class="w-input-box">
+                                        <input type="text" class="w-input w-input-limit w-input-normal"  placeholder="输入限制">
+                                        <div class="limit-num-box limit-num-box-normal">
+                                            <span>5</span>
+                                            <span>/</span>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-input-box disInput">
+                                        <input type="text" class="w-input w-input-limit w-input-normal"  placeholder="超出限制" disabled>
+                                        <div class="limit-num-box limit-num-box-normal">
+                                            <span class="limit-num">15</span>
+                                            <span class="limit-num">/</span>
+                                            <span class="limit-num">18</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>小号</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <!--小号-->
+                                <div class="lib-btn-group">
+                                    <input type="text" class="w-input w-input-small" placeholder="输入内容">
+                                    <input type="text" class="w-input w-input-small w-input-active" placeholder="活动状态">
+                                    <input type="text" class="w-input w-input-small w-input-error" placeholder="输入错误">
+                                    <input type="text" class="w-input w-input-small" placeholder="禁用" disabled>
+                                    <div class="w-input-box">
+                                        <input type="text" class="w-input w-input-limit w-input-small"  placeholder="输入限制">
+                                        <div class="limit-num-box limit-num-box-thin">
+                                            <span>5</span>
+                                            <span>/</span>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-input-box disInput">
+                                        <input type="text" class="w-input w-input-limit w-input-small"  placeholder="超出限制" disabled>
+                                        <div class="limit-num-box limit-num-box-thin">
+                                            <span class="limit-num">15</span>
+                                            <span class="limit-num">/</span>
+                                            <span class="limit-num">18</span>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,20 +307,94 @@
                             <h4>2.例子</h4>
                             <pre>&lt;input type="text" class="w-input" placeholder="输入内容"&gt;</pre>
                             <h4>3.文档</h4>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn</span> :
-                                按钮组件的默认类名，使用按钮必须先加上该类名。class="w-btn"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-main，w-btn-success，w-btn-warn，w-btn-danger</span>:
-                                按钮组件基本类：主要按钮，成功按钮，警告按钮，危险按钮。class="w-btn w-btn-main"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-dec</span>:
-                                次要按钮类，四个不同类别的按钮，加上该类，会变成次要按钮。class="w-btn w-btn-main w-btn-dec"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-write</span>:
-                                文字按钮类，四个不同类别的按钮，加上该类，会变成文字按钮。class="w-btn w-btn-main w-btn-write"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">[disabled]</span>:
-                                按钮的禁用属性。所有的按钮，加上该属性会进入禁用状态。 disabled="disabled"</p>
+                            <p class="lib-info-say"><span class="name">w-input</span> :
+                                输入框组件的默认类名，使用输入框必须先加上该类名。class="w-input"</p>
+                            <p class="lib-info-say"><span class="name">w-input-small,w-input-normal,w-input-large,w-input-xlarge</span> :
+                                输入框组件的尺寸：小号(高28)，正常(高32)，大号(高36)，超大(高40)</p>
+                            <p class="lib-info-say"><span class="name">w-input-limit</span> :
+                                输入框组件的字数限制：出现字数限制的输入框时，与w-input,以及尺寸类名组合使用</p>
+                            <p class="lib-info-say"><span class="name">w-input-active，w-input-error</span> :
+                                输入框组件的状态：活动状态，输入错误状态</p>
                         </div>
                     </div>
                 </div>
-
+                <!--带icon的输入框-->
+                <div class="lib-compnent-main clearfix" >
+                    <div class="lib-compnent-group">
+                        <p>输入前</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-xlarge"  placeholder="超大号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-large"  placeholder="大号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-normal"  placeholder="正常">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-small"  placeholder="小号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>输入后</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-xlarge"  placeholder="超大号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-large"  placeholder="大号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-normal"  placeholder="正常">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                                <div class="w-input-box">
+                                    <input type="text" class="w-input w-input-limit w-input-small"  placeholder="小号">
+                                    <div class="limit-num-box limit-num-box-xfat">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lib-compnent-use">
+                        <p>使用方案</p>
+                        <div class="lib-sayto-use w-scroll-defult">
+                            <h4 class="lib-martop-add10">1.组件特性</h4>
+                            <ul>
+                                <li>&nbsp;&nbsp;• display:inline-block;行内块元素。</li>
+                                <li>&nbsp;&nbsp;• 无外边距无边框。</li>
+                                <li>&nbsp;&nbsp;• 可浮动，可定位。</li>
+                            </ul>
+                            <h4>2.例子</h4>
+                            <pre>&lt;input type="text" class="w-input" placeholder="输入内容"&gt;</pre>
+                            <h4>3.文档</h4>
+                            <p class="lib-info-say"><span class="name">w-input</span> :
+                                输入框组件的默认类名，使用输入框必须先加上该类名。class="w-input"</p>
+                            <p class="lib-info-say"><span class="name">w-input-small,w-input-normal,w-input-large,w-input-xlarge</span> :
+                                输入框组件的尺寸：小号(高28)，正常(高32)，大号(高36)，超大(高40)</p>
+                            <p class="lib-info-say"><span class="name">w-input-limit</span> :
+                                输入框组件的字数限制：出现字数限制的输入框时，与w-input,以及尺寸类名组合使用</p>
+                            <p class="lib-info-say"><span class="name">w-input-active，w-input-error</span> :
+                                输入框组件的状态：活动状态，输入错误状态</p>
+                        </div>
+                    </div>
+                </div>
 
                 <!--<div class="lib-compnent-main clearfix" >
                     <div class="lib-compnent-group">&lt;!&ndash;<p><pre> &lt;p&gt;</pre></p>&ndash;&gt;

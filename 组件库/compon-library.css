@@ -150,8 +150,9 @@ button:hover {
 /*输入框样式组 start*/
 .w-input{
     display: inline-block;
-    padding: 8px 10px 8px 15px;
-    font-size: 14px;
+    padding: 4px 10px 4px 15px;
+    line-height: 22px;
+    font-size: 12px;
     box-sizing: border-box;
     width:180px;
     border:1px solid #e1e1e1;
@@ -159,15 +160,54 @@ button:hover {
     background:#fff;
     color: #444;
 }
+
 /*尺寸控制*/
-.w-input-
+.w-input-small{
+    padding: 3px 10px 3px 15px;
+    line-height: 20px;
+}
+.w-input-normal{
+    padding: 4px 10px 4px 15px;
+    line-height: 22px;
+}
+.w-input-large{
+    padding: 6px 10px 6px 15px;
+    line-height: 22px;
+    font-size: 14px;
+}
+.w-input-xlarge{
+    padding: 8px 10px 8px 15px;
+    line-height: 22px;
+    font-size: 14px;
+}
+.w-input-limit{
+    padding: 8px 38px 8px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+}
+.w-input-limit.w-input-small{
+    padding: 3px 38px 3px 15px;
+}
+.w-input-limit.w-input-normal{
+    padding: 4px 38px 4px 15px;
+}
+.w-input-limit.w-input-large{
+    padding: 6px 38px 6px 15px;
+}
+.w-input-limit.w-input-xlarge{
+    padding: 8px 38px 8px 15px;
+}
+/*活动状态*/
 .w-input-active{
     border:1px solid #45c0ff;
     box-shadow:0 0 6px 0 #edf9ff;
 }
+/*错误状态*/
 .w-input-error{
     border:1px solid #fa5555;
 }
+/*鼠滑*/
 .w-input:hover,
 .w-input-box:hover
 {
@@ -201,22 +241,19 @@ button:hover {
     background:#fff;
     color: #444;
 }
-.w-input-box.disInput .w-input-limit{
+.w-input-box.disInput .w-input-limit,
+.w-input-box.disInput .limit-num-box{
     opacity: .4;
     cursor: not-allowed;
 }
+.w-input-box.disInput .limit-num-box
+
 .w-input-box.disInput:hover{
     border:1px solid #e1e1e1;
     box-shadow: none;
 }
 .lib-btn-group .w-input-box .w-input{
     margin: 0;
-}
-.w-input-limit{
-    padding: 8px 38px 8px 15px;
-    width: 100%;
-    box-sizing: border-box;
-    border: 0;
 }
 .w-input-box .w-input-limit:hover{
     border:0;
@@ -228,22 +265,39 @@ button:hover {
     position: absolute;
     top:0;
     right: 10px;
-    display: inline-flex;
-    height: 36px;
-    line-height: 36px;
+    height: 100%;
     color: #999;
     font-size: 12px;
+}
+.limit-num-box-xfat{
+    padding: 10px 0;
+
+}
+.limit-num-box-fat{
+    padding: 9px 0;
+
+}
+.limit-num-box-normal{
+    padding: 6px 0;
+}
+.limit-num-box-thin{
+    padding: 4px 0;
+}
+.limit-num-box span{
+    float: left;
+    display: inline-block;
 }
 /*超出限制*/
 .limit-num{
     color:#fa5555;
 }
+/*placeholder样式*/
 input.w-input::-webkit-input-placeholder { /* WebKit browsers */
-    font-size:14px;
-    color:#a9aaaa;
-    letter-spacing:0;
-    text-align:left;
-}
+     font-size:14px;
+     color:#a9aaaa;
+     letter-spacing:0;
+     text-align:left;
+ }
 input.w-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-size:14px;
     color:#a9aaaa;
@@ -261,5 +315,21 @@ input.w-input:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:#a9aaaa;
     letter-spacing:0;
     text-align:left;
+}
+input.w-input-small::-webkit-input-placeholder,
+input.w-input-normal::-webkit-input-placeholder { /* WebKit browsers */
+    font-size:12px;
+}
+input.w-input-small:-moz-placeholder,
+input.w-input-normal:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size:12px;
+}
+input.w-input-small::-moz-placeholder,
+input.w-input-normal::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size:12px;
+}
+input.w-input-small:-ms-input-placeholder,
+input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size:12px;
 }
 /*输入框样式组 end*/

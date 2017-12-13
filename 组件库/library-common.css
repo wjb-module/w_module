@@ -20,7 +20,7 @@ div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
     margin-top: 10px;
 }
 .lib-info-say{
-    margin: 5px 0;
+    margin: 5px 0 0 10px;
 }
 .lib-info-say>.name{
     font-size: 14px;
