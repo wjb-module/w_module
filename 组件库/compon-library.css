@@ -159,6 +159,8 @@ button:hover {
     background:#fff;
     color: #444;
 }
+/*尺寸控制*/
+.w-input-
 .w-input-active{
     border:1px solid #45c0ff;
     box-shadow:0 0 6px 0 #edf9ff;
@@ -211,8 +213,8 @@ button:hover {
     margin: 0;
 }
 .w-input-limit{
-    padding: 8px 10px 8px 15px;
-    width: 146px;
+    padding: 8px 38px 8px 15px;
+    width: 100%;
     box-sizing: border-box;
     border: 0;
 }
