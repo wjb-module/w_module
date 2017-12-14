@@ -146,6 +146,7 @@ div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
     width: calc(100% - 150px);
     color: #666;
     font-weight: normal;
+    background-color: #fff;
 }
 
 .lib-compoent-list {
@@ -209,7 +210,6 @@ div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 }
 
 .lib-btn-group .w-btn,
-.lib-btn-group .w-input,
 .lib-btn-group .w-input-box,
 .lib-btn-group .w-count-box
 {
