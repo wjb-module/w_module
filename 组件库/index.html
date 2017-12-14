@@ -343,7 +343,7 @@
                                         <i></i>
                                     </span>
                                 </div>
-                                <div class="w-input-box">
+                                <div class="w-input-box w-input-icon-thin">
                                     <input type="text" class="w-input w-input-icon w-input-icon-before w-input-normal"  placeholder="标准">
                                     <span class="w-icon w-icon-search">
                                         <i></i>
@@ -352,7 +352,7 @@
                                         <i></i>
                                     </span>
                                 </div>
-                                <div class="w-input-box">
+                                <div class="w-input-box w-input-icon-thin disInput">
                                     <input type="text" class="w-input w-input-icon w-input-icon-before w-input-small"  placeholder="小号">
                                     <span class="w-icon w-icon-search">
                                         <i></i>
@@ -385,7 +385,7 @@
                                         <i></i>
                                     </span>
                                 </div>
-                                <div class="w-input-box">
+                                <div class="w-input-box w-input-icon-thin">
                                     <input type="text" class="w-input w-input-icon w-input-icon-after w-input-normal"  placeholder="标准">
                                     <span class="w-icon w-icon-search w-icon-search-after">
                                         <i></i>
@@ -394,8 +394,8 @@
                                         <i></i>
                                     </span>
                                 </div>
-                                <div class="w-input-box">
-                                    <input type="text" class="w-input w-input-icon w-input-icon-after w-input-small"  placeholder="小号">
+                                <div class="w-input-box w-input-icon-thin disInput">
+                                    <input type="text" class="w-input w-input-icon w-input-icon-after w-input-small"  placeholder="小号" disabled>
                                     <span class="w-icon w-icon-search w-icon-search-after">
                                         <i></i>
                                     </span>
@@ -430,6 +430,58 @@
                     </div>
                 </div>
 
+                <!--计数器-->
+                <div class="lib-compnent-main clearfix" >
+                    <div class="lib-compnent-group">
+                        <p>计数器</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-btn-group">
+                                <div class="w-count-box w-count-xlarge">
+                                    <input type="text" class="w-count" value="0">
+                                    <span class="w-count-btn w-count-add"></span>
+                                    <span class="w-count-btn w-count-reduce w-count-disable"></span>
+                                </div>
+                                <div class="w-count-box w-count-large">
+                                    <input type="text" class="w-count" value="0">
+                                    <span class="w-count-btn w-count-add"></span>
+                                    <span class="w-count-btn w-count-reduce"></span>
+                                </div>
+                                <div class="w-count-box w-count-normal disInput">
+                                    <input type="text" class="w-count" value="0" disabled>
+                                    <span class="w-count-btn w-count-add"></span>
+                                    <span class="w-count-btn w-count-reduce"></span>
+                                </div>
+                                <div class="w-count-box w-count-small">
+                                    <span class="w-count-btn w-count-add"></span>
+                                    <input type="text" class="w-count" value="0">
+                                    <span class="w-count-btn w-count-reduce w-count-reduce-disable"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lib-compnent-use">
+                        <p>使用方案</p>
+                        <div class="lib-sayto-use w-scroll-defult">
+                            <h4 class="lib-martop-add10">1.组件特性</h4>
+                            <ul>
+                                <li>&nbsp;&nbsp;• display:inline-block;行内块元素。</li>
+                                <li>&nbsp;&nbsp;• 无外边距无边框。</li>
+                                <li>&nbsp;&nbsp;• 可浮动，可定位。</li>
+                            </ul>
+                            <h4>2.例子</h4>
+                            <pre>&lt;input type="text" class="w-input" placeholder="输入内容"&gt;</pre>
+                            <h4>3.文档</h4>
+                            <p class="lib-info-say"><span class="name">w-input</span> :
+                                输入框组件的默认类名，使用输入框必须先加上该类名。class="w-input"</p>
+                            <p class="lib-info-say"><span class="name">w-input-small,w-input-normal,w-input-large,w-input-xlarge</span> :
+                                输入框组件的尺寸：小号(高28)，正常(高32)，大号(高36)，超大(高40)</p>
+                            <p class="lib-info-say"><span class="name">w-input-limit</span> :
+                                输入框组件的字数限制：出现字数限制的输入框时，与w-input,以及尺寸类名组合使用</p>
+                            <p class="lib-info-say"><span class="name">w-input-active，w-input-error</span> :
+                                输入框组件的状态：活动状态，输入错误状态</p>
+                        </div>
+                    </div>
+                </div>
                 <!--<div class="lib-compnent-main clearfix" >
                     <div class="lib-compnent-group">&lt;!&ndash;<p><pre> &lt;p&gt;</pre></p>&ndash;&gt;
                         <p>图标按钮</p>
