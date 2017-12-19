@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/src/js/services/banniuService.js" />
+    <file url="file://$PROJECT_DIR$/src/js/services/salecrmService.js" />
+    <file url="file://$PROJECT_DIR$/src/js/services/sv-throw.js" />
+    <file url="file://$PROJECT_DIR$/src/js/services/synchroService.js" />
+    <file url="file://$PROJECT_DIR$/src/js/services/ui-load.js" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="true" />
   <component name="masterDetails">
     <states>
