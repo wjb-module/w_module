@@ -538,7 +538,41 @@ input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
     cursor: not-allowed;
 }
 /*计数器样式组 end*/
-
+/*下拉菜单 start*/
+.w-down-box{
+    position: relative;
+}
+.w-down-body{
+    position: absolute;
+    width: 128px;
+    max-height: 160px;
+    left: 0;
+    margin-top: 5px;
+    background:#ffffff;
+    border:1px solid #e7ecf3;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.04);
+    border-radius:2px;
+    transition: .3s;
+    transform-origin:0% 0%;
+    transform: scaleY(0);
+}
+.w-btn-down:focus + .w-down-body{
+    display: block;
+    transform: scaleY(1);
+}
+.w-down-default{/*下拉菜单的默认样式*/
+    padding: 10px 0;
+}
+.w-down-default>div{
+    padding: 6px 15px 6px 15px;
+    font-size: 12px;
+    color: #666;
+    cursor: default;
+}
+.w-down-default>div:hover{
+    color: #3289f2;
+}
+/*下拉菜单 end*/
 /*加载动画 start*/
 .w-load{
     position: absolute;
