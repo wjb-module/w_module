@@ -96,7 +96,7 @@ button:hover {
     width: 12px;
     height: 12px;
     margin-right: 4px;
-    background: url("/apps/lib-img/dongcha.ico");
+    background: url("apps/images/wjb-img.png");
 }
 .w-btn.w-btn-load:before{
     content: " ";
@@ -104,7 +104,7 @@ button:hover {
     width: 14px;
     height: 14px;
     margin-right: 4px;
-    background: url("/apps/lib-img/dongcha.ico");
+    background: url("apps/images/wjb-img.png");
 }
 .w-btn.w-btn-load{
     opacity:.4;
@@ -346,7 +346,7 @@ input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 .w-input-box .w-icon i{
     position: absolute;
-    background: url(./images/wjb-img.png);
+    background: url(apps/images/wjb-img.png);
     cursor: pointer;
 }
 .w-input-box.disInput .w-icon i{
@@ -538,3 +538,36 @@ input.w-input-normal:-ms-input-placeholder { /* Internet Explorer 10+ */
     cursor: not-allowed;
 }
 /*计数器样式组 end*/
+
+/*加载动画 start*/
+.w-load{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background: #f3f6f8;
+    opacity: .8;
+}
+.w-load-min{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("apps/images/dc-min-load.gif");
+}
+.w-load-img{
+    position: relative;
+    top: calc(50% - 50px);
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url("apps/images/wjb-load.gif");
+}
+.w-load-msg{
+    position: relative;
+    top: calc( 50% - 50px);
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+/*加载动画 end*/

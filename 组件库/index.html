@@ -61,6 +61,7 @@
             </li>
             <li><p>消息反馈</p></li>
             <li><p>分页</p></li>
+            <li><p><a href="#loading">加载动画</a></p></li>
         </ul>
     </div>
     <div class="lib-main-body w-scroll-defult">
@@ -505,16 +506,35 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="lib-compnent-main clearfix" >
-                    <div class="lib-compnent-group">&lt;!&ndash;<p><pre> &lt;p&gt;</pre></p>&ndash;&gt;
-                        <p>图标按钮</p>
+
+            </div>
+            <div class="lib-compnent" id="loading">
+                <div class="lib-compnent-info">
+                    <p>使用规则</p>
+                    <p>加载动画始终保持在内容区域正中心</p>
+                    <ul>
+                        <li>• 加载loading的父元素应该相对自身定位。</li>
+                        <li>• 父元素没有定位，加载动画将会与进行定位的祖先元素进行位置匹配。</li>
+                    </ul>
+                </div>
+                <div class="lib-compnent-main clearfix">
+                    <div class="lib-compnent-group">
+                        <p>通用加载动画</p>
                         <div class="lib-compnent-show">
-                            <div class="lib-btn-group">
-                                <button class="w-btn w-btn-main"><span class="sea"></span> 主要</button>
-                                <button class="w-btn w-btn-success">成功</button>
-                                <button class="w-btn w-btn-warn">警告</button>
-                                <button class="w-btn w-btn-danger">危险</button>
+                            <div class="lib-load-group">
+                                <div class="w-load">
+                                    <div class="w-load-img"></div>
+                                    <div class="w-load-msg">拼命加载中...</div>
+                                </div>
                             </div>
+
+                        </div>
+                        <p>局部加载动画</p>
+                        <div class="lib-compnent-show">
+                            <div class="lib-load-group">
+                                <span>正在加载的文字1</span>&nbsp;&nbsp;&nbsp;<div class="w-load-min"></div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="lib-compnent-use">
@@ -523,26 +543,27 @@
                             <h4 class="lib-martop-add10">1.组件特性</h4>
                             <ul>
                                 <li>&nbsp;&nbsp;• display:inline-block;行内块元素。</li>
-                                <li>&nbsp;&nbsp;• 无外边距无边框。</li>
-                                <li>&nbsp;&nbsp;• 可浮动，可定位。</li>
+                                <li>&nbsp;&nbsp;• 无边框，有自动边距。</li>
+                                <li>&nbsp;&nbsp;• 不可浮动，不可重新定位。</li>
                             </ul>
                             <h4>2.例子</h4>
                             <pre>&lt;button class="w-btn w-btn-main w-btn-write" disabled &gt;文字按钮&lt;/button&gt;//带有禁用的文字按钮</pre>
                             <h4>3.文档</h4>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn</span> :
+                            <p class="lib-info-say"><span class="name">w-btn</span> :
                                 按钮组件的默认类名，使用按钮必须先加上该类名。class="w-btn"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-main，w-btn-success，w-btn-warn，w-btn-danger</span>:
+                            <p class="lib-info-say"><span class="name">w-btn-main，w-btn-success，w-btn-warn，w-btn-danger</span>:
                                 按钮组件基本类：主要按钮，成功按钮，警告按钮，危险按钮。class="w-btn w-btn-main"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-dec</span>:
-                                次要按钮类，四个不同类别的按钮，加上该类，会变成次要按钮。class="w-btn w-btn-main w-btn-dec"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">w-btn-write</span>:
+                            <p class="lib-info-say"><span class="name">w-btn-dec</span>:
+                                次要按钮类，四个不同类别的g按钮，加上该类，会变成次要按钮。class="w-btn w-btn-main w-btn-dec"</p>
+                            <p class="lib-info-say"><span class="name">w-btn-write</span>:
                                 文字按钮类，四个不同类别的按钮，加上该类，会变成文字按钮。class="w-btn w-btn-main w-btn-write"</p>
-                            <p class="lib-info-say"> &nbsp;&nbsp;&nbsp;&nbsp;<span class="name">[disabled]</span>:
+                            <p class="lib-info-say"><span class="name">w-sea</span>:
+                                搜索图标按钮类，四个不同类别的按钮，加上该类，会给图标加上搜索按钮。class="w-btn w-btn-main w-sea"</p>
+                            <p class="lib-info-say"><span class="name">[disabled]</span>:
                                 按钮的禁用属性。所有的按钮，加上该属性会进入禁用状态。 disabled="disabled"</p>
                         </div>
                     </div>
-                </div>-->
-
+                </div>
             </div>
         </div>
     </div>
